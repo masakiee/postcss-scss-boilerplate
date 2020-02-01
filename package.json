@@ -1,0 +1,27 @@
+{
+  "name": "postcss-scss-build",
+  "version": "1.0.0",
+  "description": "A boilerplater for building SCSS by PostCSS",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": {
+    "name": "Masaki INOUE"
+  },
+  "main": "index.js",
+  "scripts": {
+    "reset:css": "rm -rf dist/assets/css",
+    "build:css": "npm run reset:css && ./node_modules/.bin/postcss ./src/assets/sass/**/*.scss --base src/assets/sass --dir ./dist/assets/css --ext .css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "postcss": "^7.0.26",
+    "postcss-cli": "^7.1.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-scss": "^2.0.0"
+  },
+  "dependencies": {}
+}

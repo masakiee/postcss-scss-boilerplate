@@ -1,0 +1,22 @@
+.module1 .style1 {
+  font-size: 100%;
+  color: #d00;
+}
+
+.module1 {
+  .nested1 {
+    background: #ddd;
+    .nested2 {
+      .nested3 {
+        line-height: 100px;
+      }
+    }
+  }
+  &__bem-like-element {
+    border-radius: 4px;
+    &--modifer {
+      color: blue;
+    }
+  }
+}
+
